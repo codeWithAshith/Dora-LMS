@@ -1,5 +1,7 @@
+import { Button } from "@/components/ui/button";
+
 const Home = () => {
-  return <div className="underline">Para - LMS</div>;
+  return <Button>Button</Button>;
 };
 
 export default Home;
