@@ -1,7 +1,7 @@
-import { Bricolage_Grotesque } from "next/font/google";
+import { Manrope } from "next/font/google";
 import "./globals.css";
 
-const bricolageGrotesque = Bricolage_Grotesque({
+const manrope = Manrope({
   subsets: ["latin"],
 });
 
@@ -12,7 +12,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={bricolageGrotesque.className}>
+    <html lang="en" className={manrope.className}>
       <body>{children}</body>
     </html>
   );
