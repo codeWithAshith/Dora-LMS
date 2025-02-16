@@ -1,8 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
+
 @import "tailwindcss";
 
 @plugin "tailwindcss-animate";
 
 @custom-variant dark (&:is(.dark *));
+
+@theme {
+  --color-primary: #d4af37;
+  --color-primary-light: #e1c14f; 
+  --color-primary-dark: #9e7f1d; 
+  --color-secondary: #f1f1f1; 
+  --color-accent: #f4c542; 
+  --color-background: #121212; 
+}
 
 :root {
   --card: hsl(0 0% 100%);
