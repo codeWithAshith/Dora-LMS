@@ -2,18 +2,16 @@
 import { Button } from "@/components/ui/button";
 import { useRouter } from "next/navigation";
 
-const Home = () => {
+const Payments = () => {
   const router = useRouter()
   return (
     <div className="flex flex-col justify-center items-center min-h-screen bg-background p-6 w-full">
       <div className="text-center">
-        <h1>Welcome to Dora LMS</h1>
-        <p>Your learning journey starts here!</p>
-        <Button style={{ marginRight: '10px' }} onClick={()=> router.push('/viewcontents')}>Login</Button>
-        <Button>Sign Up</Button>
+        <h1>This is payment page</h1>
+        <Button style={{ marginRight: '10px' }} onClick={()=> router.push('/viewcontents')}>View invoice</Button>
       </div>
     </div>
   );
 };
 
-export default Home;
+export default Payments;
