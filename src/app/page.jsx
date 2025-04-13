@@ -9,7 +9,7 @@ const Home = () => {
       <div className="text-center">
         <h1>Welcome to Dora LMS</h1>
         <p>Your learning journey starts here!</p>
-        <Button style={{ marginRight: '10px' }} onClick={()=> router.push('/viewcontents')}>Login</Button>
+        <Button className="mt-3" style={{ marginRight: '10px' }} onClick={()=> router.push('/viewcontents')}>Get Started</Button>
         <Button>Sign Up</Button>
       </div>
     </div>

@@ -1,5 +1,8 @@
 import { Manrope } from "next/font/google";
 import "./globals.css";
+import NavbarComponent from "@/components/Navbar.component";
+import FooterComponent from "@/components/Footer.component";
+import { SessionWrapper } from "./auth/sessionWrapper";
 
 const manrope = Manrope({
   subsets: ["latin"],
@@ -13,7 +16,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={manrope.className}>
-      <body>{children}</body>
+      <body>
+        <SessionWrapper>
+          <NavbarComponent />
+          <main className="pt-20 min-h-screen">{children}</main>
+          <FooterComponent />
+        </SessionWrapper>
+      </body>
     </html>
   );
 }
