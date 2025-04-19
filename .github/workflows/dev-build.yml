@@ -43,9 +43,9 @@ jobs:
       - name: Debug — Print current directory
         run: pwd
 
-      - name: Zip .next folder
-        run: |
-          zip -r next-build.zip .next
+      - name: Zip .next folder (Windows compatible)
+        run: Compress-Archive -Path .next -DestinationPath next-build.zip
+        shell: pwsh
 
       - name: Upload build artifact
         uses: actions/upload-artifact@v4
