@@ -17,4 +17,5 @@ export const PROTECTED_ROUTES = [
   { label: "Dashboard", href: "/dashboard/home" },
   { label: "Profile", href: "/profile" },
   { label: "Settings", href: "/settings" },
+  { label: "Quiz", href: "/quiz" }
 ];

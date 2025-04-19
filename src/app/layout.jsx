@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
       <body>
         <SessionWrapper>
           <NavbarComponent />
-          <main className="pt-20 min-h-screen">{children}</main>
+          <main className="pt-10 min-h-screen">{children}</main>
           <FooterComponent />
         </SessionWrapper>
       </body>
