@@ -44,7 +44,7 @@ const Home = () => {
         <div className="mt-6 w-full max-w-md outline outline-2 outline-blue-500">
           <input
             type="text"
-            placeholder="🔍 Search for course, skills and Videos"
+            placeholder="🔍 Search for course, skills and Videos."
             className="w-full px-5 py-3 rounded-lg text-black outline-none"
           />
         </div>
