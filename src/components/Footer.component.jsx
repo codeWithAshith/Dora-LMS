@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const FooterComponent = () => {
   return (
-    <footer className="bg-white border-t border-gray-200 text-sm text-gray-600">
+    <footer className="bg-indigo-950 border-t border-gray-200 text-sm text-gray-300">
       <div className="max-w-7xl mx-auto px-4 py-6 flex flex-col md:flex-row items-center justify-between gap-4">
         <p>&copy; {new Date().getFullYear()} DORA LMS. All rights reserved.</p>
         <div className="flex flex-wrap gap-4">

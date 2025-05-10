@@ -3,7 +3,7 @@
 export const PUBLIC_ROUTES = [
   { label: "Home", href: "/" },
   { label: "Courses", href: "/courses" },
-  { label: "About", href: "/pages/about" },
+  { label: "About", href: "/about" },
   { label: "Contact", href: "/pages/contact" },
   { label: "FAQ", href: "/pages/faq" },
 ];

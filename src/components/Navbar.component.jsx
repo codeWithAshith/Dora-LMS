@@ -33,7 +33,7 @@ const NavbarComponent = () => {
     ));
 
   return (
-    <header className="w-full border-b bg-background sticky top-0 z-50">
+    <header className="w-full border-b bg-gray-200 sticky top-0 z-50">
       <div className="container mx-auto px-4 flex items-center justify-between h-16">
         <Link
           href="/"
@@ -82,7 +82,7 @@ const NavbarComponent = () => {
               <DialogTitle>
                 <VisuallyHidden>Navigation Menu</VisuallyHidden>
               </DialogTitle>
-              <div className="mt-4 space-y-4 flex flex-col">
+              <div className="mt-4 space-y-4 flex flex-col mx-3">
                 {renderLinks(PUBLIC_ROUTES)}
 
                 {session ? (
