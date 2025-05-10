@@ -4,8 +4,8 @@ export const PUBLIC_ROUTES = [
   { label: "Home", href: "/" },
   { label: "Courses", href: "/courses" },
   { label: "About", href: "/about" },
-  { label: "Contact", href: "/pages/contact" },
-  { label: "FAQ", href: "/pages/faq" },
+  { label: "Contact", href: "/contact" },
+  { label: "FAQ", href: "/faq" },
 ];
 
 export const AUTH_ROUTES = [
