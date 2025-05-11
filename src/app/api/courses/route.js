@@ -10,6 +10,6 @@ export async function GET() {
         return Response.json({success:true, data:courses})
     } catch (error) {
         console.error("Error fetching courses: ", error);
-        return Response.json({success: false, message: "Failed to fetch courses"})
+        return Response.json({success: false, message: "Failed to fetch courses",error: error.message})
     }
 }
