@@ -6,6 +6,7 @@ import Image from "next/image";
 import lmslanding from '../assests/Lms-landing-page-1.jpg'
 import CourseCard from "../components/ui/coursecard";
 import QuizCard from "../components/ui/quizcard";
+import { Book, Users, Layers } from "lucide-react";
 
 const Home = () => {
   const router = useRouter()
@@ -13,14 +14,17 @@ const Home = () => {
     {
       title: "50K+ Online Courses",
       subtitle: "Enjoy lifetime access to courses",
+      icon: <Book className="w-8 h-8 text-blue-500" />,
     },
     {
       title: "Top Industry Experts",
       subtitle: "Top instructors around world",
+      icon: <Users className="w-8 h-8 text-green-500" />,
     },
     {
       title: "Explore Categories",
       subtitle: "Build your library for career",
+      icon: <Layers className="w-8 h-8 text-purple-500" />,
     },
   ];
   return (
@@ -35,12 +39,16 @@ const Home = () => {
     <div>
       <div className="bg-gradient-to-r from-cyan-500 to-blue-700 min-h-screen flex flex-col justify-center items-start px-8 text-white relative overflow-hidden">
         <h1 className="text-4xl md:text-6xl font-bold max-w-2xl">
-          Get unlimited access to <span className="text-pink-400">5000+ courses.</span>
+          Unlock Your Potential with <span className="text-yellow-300">Unlimited Learning</span>
         </h1>
         <p className="mt-4 max-w-xl text-lg">
           Choose from over 100,000 online video courses with new additions published every month.
         </p>
-
+        <div className="space-x-4">
+          <Button className="bg-yellow-400 text-black hover:bg-yellow-300" onClick={() => router.push('/viewcontents')}>
+            Get Started
+          </Button>
+        </div>
         <div className="mt-6 w-full max-w-md outline outline-2 outline-blue-500">
           <input
             type="text"
@@ -59,6 +67,7 @@ const Home = () => {
       <div className="bg-white py-10 px-8 grid md:grid-cols-3 gap-8 text-center shadow-md rounded-xl -mt-10 max-w-6xl mx-auto relative z-10">
         {data.map((item, idx) => (
           <div key={idx} className="flex flex-col items-center">
+            {item.icon}
             <h3 className="text-xl font-semibold">{item.title}</h3>
             <p className="text-gray-600 mt-2">{item.subtitle}</p>
           </div>
@@ -77,7 +86,7 @@ const Home = () => {
           <CourseCard />
         </div>
 
-        <Button className="mt-5" onClick={()=> router.push('/courses')}>
+        <Button className="mt-5" onClick={() => router.push('/courses')}>
           View All Courses
         </Button>
       </div>
@@ -93,7 +102,7 @@ const Home = () => {
         </div>
 
         <div className="mt-12 text-center">
-          <Button className="mt-5" onClick={()=> router.push('/quiz')}>
+          <Button className="mt-5" onClick={() => router.push('/quiz')}>
             View All Quiz
           </Button>
         </div>

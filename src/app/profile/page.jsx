@@ -1,4 +1,5 @@
-export default function Page() {
-    return <div>Profile Page</div>; // change text per page
-  }
-  
+import { redirect } from "next/navigation";
+
+export default function ProfilePage() {
+  redirect("/profile/allcoursespage");
+}
